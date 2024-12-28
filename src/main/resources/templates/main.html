@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .height2 {
+            height: 100px;
+        }
+        .header {
+            @apply bg-transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+        .homepageLink img,
+        .homepageLinkSml img {
+            height: 50px;
+        }
+        .menuButton span {
+            display: block;
+            background-color: #fff;
+            height: 3px;
+            width: 25px;
+            margin: 5px 0;
+        }
+        .menuButton {
+            cursor: pointer;
+        }
+        .headerLinks a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+        }
+        .headerLinks a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="section height2 header atom backTurq">
+        <div class="innerSection">
+            <div class="innerSection2">
+                <div class="column sectionColFull" style="">
+                    <div class="sectionColInner">
+                        <div class="wrapper wrapperFloatLeft wrapperHeight100">
+                            <a class="homepageLink" href="/index.html">
+                                <img src="/_assets/images/generic/skins/00/navigation/secondary-logo/header-logo_lrg.svg?v=1726365843000" alt="">
+                            </a>
+                            <a class="homepageLinkSml" href="/index.html">
+                                <img src="/_assets/images/generic/skins/00/navigation/secondary-logo/header-logo_lrg.svg?v=1726365843000" alt="">
+                            </a>
+                        </div>
+                        <div class="wrapper menuButtonWrapper wrapperFloatLeft wrapperHeight100">
+                            <a href="#" class="link menuButton vAlignMiddle" onclick="overlayPanelOpen(event,'menuTabs');" data-trackclick="menuButton">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="wrapper wrapperFloatRight wrapperHeight100 wrapperPaddingLeft1">
+                            <a href="/search/search.html" class="link fontWhite searchButton vAlignMiddle" data-trackclick="searchButton">&nbsp;</a>
+                        </div>
+                        <div class="wrapper vAlignMiddle loginFields wrapperFloatRight">
+                            <form autocomplete="off" method="post" name="LOGIN_FORM" action="https://www.online.fnb.co.za/login/Controller" id="LOGIN_FORM">
+                                <input name="multipleSubmit" id="multipleSubmit" type="hidden" value="0">
+                                <input type="text" placeholder="Username" id="user" name="Username" tabindex="1" class="userName">
+                                <input type="password" placeholder="Password" id="pass" name="Password" tabindex="2" class="passWord">
+                                <input type="submit" class="btnLogin" value="Login" id="OBSubmit">
+                            </form>
+                        </div>
+                        <div class="wrapper vAlignMiddle atom headerLinks wrapperFloatRight">
+                            <a href="https://www.online.fnb.co.za/banking/main.jsp?country=15&amp;skin=0&amp;nav=registration.navigator.RegistrationLanding&amp;simple=true" target="" class="link fontWhite">Register</a>
+                            <a href="https://www.online.fnb.co.za/banking/main.jsp?country=15&amp;skin=0&amp;nav=loginproblems.FnbLoginProblems" target="" class="link fontWhite">Forgot Username or Password</a>
+                            <a href="https://www.online.fnb.co.za/banking/main.jsp?country=15&amp;skin=0&amp;nav=verifyremittance.VerifyRemittanceAdvise" target="" class="link fontWhite">Verify payments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
